@@ -6,6 +6,9 @@
 # the mean of the pollutant across all of the monitors, ignoring any
 # missing values coded as NA.
 
+# Validation Data URL:
+# https://d3c33hcgiwev3.cloudfront.net/_3b0da118473bfa0845efddcbe29cc336_pollutantmean-demo.html?Expires=1587254400&Signature=bdfIFi4FEEWDzSUH7pV1MzLPB0tgdnODCCS3qNeooLZzOfl-X1kiId5Ybcu6iORBXJiO9eEAYDu3OdiakZ1rHxxJlQzQF3iduY95ehunvL11kieJN8VGXTyO~WmvymuiG9deSOVyZ-iYhwQi0Ytk-T2-EOHr7PpjyJ1qKv09Niw_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A
+
 pollutantmean <- function (directory, pollutant, id=1:332){
     # Get directory of the source where CSV are
     directory <- paste(getwd(),"/",directory,"/",sep="")
