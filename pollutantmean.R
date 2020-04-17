@@ -28,6 +28,6 @@ pollutantmean <- function (directory, pollutant, id=1:332){
         # Join the data on the final row, to the Final Data
         final_data <- rbind(final_data,a)
     }
-    # Calculate the mean without the NAs and based on the whole Matrix [[]]
+    # Calculate the mean without the NAs just the values not the names of fields and columns
     mean(final_data[[pollutant]], na.rm = TRUE)
 }
